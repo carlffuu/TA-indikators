@@ -4,12 +4,12 @@ plotDiv.data.filter(x => x.name == "Volume");
 
 VolumeShudas = plotDiv.data.filter(x => x.name == "Volume")[0];
 
-delete VolumeShudas.x;
-delete VolumeShudas.y;
-VolumeShudas.x = "";
-VolumeShudas.y = "";
-VolumeShudas.xaxis = "";
-VolumeShudas.yaxis = "";
+delete VolumePls.x;
+delete VolumePls.y;
+VolumePls.x = "";
+VolumePls.y = "";
+VolumePls.xaxis = "";
+VolumePls.yaxis = "";
 
 try {
 	plotDiv.layout.yaxis.domain = [0.605,1];
@@ -50,5 +50,5 @@ for (let i = 1; i < plotDiv.data.length; i++) {
 	plotDiv.data[i].visible = "legendonly";
 }
 
-document.querySelector("div:nth-child(4) > a:nth-child(3)").click()
+document.querySelector("div:nth-child(4) > a:nth-child(3)").click();
 Plotly.relayout(plotDiv.getAttribute("id"), { annotations: [] });

@@ -2,7 +2,7 @@ var plotDiv = document.getElementsByClassName("plotly-graph-div js-plotly-plot")
 
 plotDiv.data.filter(x => x.name == "Volume");
 
-VolumeShudas = plotDiv.data.filter(x => x.name == "Volume")[0];
+VolumePls = plotDiv.data.filter(x => x.name == "Volume")[0];
 
 delete VolumePls.x;
 delete VolumePls.y;
